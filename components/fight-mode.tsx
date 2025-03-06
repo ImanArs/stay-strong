@@ -41,7 +41,7 @@ export default function FightMode({
 
   return (
     <motion.div
-      className="flex flex-col h-full p-4"
+      className="flex flex-col h-[100vh] p-4 pb-16 overflow-auto"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
