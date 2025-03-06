@@ -86,7 +86,7 @@ export default function CreateRecord({
     ? userRecords.find((r) => r.exerciseId === selectedExercise.id)
     : null;
 
-  const records = JSON.parse(localStorage.getItem("userRecords") || "") ?? [];
+  const records = JSON.parse(localStorage.getItem("userRecords") || "[]");
   const filteredRecords = records.filter(
     (record: UserRecord) => record.exerciseId === selectedExercise?.id
   );
