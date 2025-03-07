@@ -39,18 +39,18 @@ export default function Settings() {
       ></iframe>
       `,
     },
-    {
-      id: "support",
-      title: "Support",
-      icon: HelpCircle,
-      content: `
-      <iframe 
-        src="https://form.123formbuilder.com/6817350/contact-form" 
-        width="100%" 
-        height="400px" 
-        style="border:none; border-radius: 12px;"
-      ></iframe>`,
-    },
+    // {
+    //   id: "support",
+    //   title: "Support",
+    //   icon: HelpCircle,
+    //   content: `
+    //   <iframe
+    //     src="https://form.123formbuilder.com/6817350/contact-form"
+    //     width="100%"
+    //     height="400px"
+    //     style="border:none; border-radius: 12px;"
+    //   ></iframe>`,
+    // },
   ];
 
   return (
