@@ -105,6 +105,12 @@ export default function App() {
     }
   };
 
+  const handleChange = (tab: string) => {
+    setActiveTab(tab);
+    setShowFightMode(false);
+    window?.scrollTo(0, 0);
+  };
+
   if (showOnboarding) {
     return (
       <Onboarding onComplete={completeOnboarding} onSkip={completeOnboarding} />
@@ -112,7 +118,7 @@ export default function App() {
   }
 
   return (
-    <div className="flex flex-col h-screen bg-gradient-to-b from-gray-900 to-gray-950 text-white">
+    <div className="flex flex-col h-screen pb-[15vh] bg-gradient-to-b from-gray-900 to-gray-950 text-white">
       <AnimatePresence mode="wait">
         {showFightMode ? (
           <FightMode
@@ -142,7 +148,7 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      <BottomNavigation activeTab={activeTab} onChange={setActiveTab} />
+      <BottomNavigation activeTab={activeTab} onChange={handleChange} />
     </div>
   );
 }
